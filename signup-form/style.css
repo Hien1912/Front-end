@@ -1,0 +1,133 @@
+@media screen and (min-width: 768px) {
+    body {
+        background-color: rgb(218, 108, 108);
+        background-image: url('images/bg-intro-desktop.png');
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .left {
+        float: left;
+        width: 50%;
+        text-align: left;
+        height: 100fr;
+    }
+
+    .right {
+        float: left;
+        width: 50%;
+    }
+
+    h1 {
+        width: 50%;
+        margin: 40% auto 0 auto;
+    }
+
+    p {
+        width: 60%;
+        margin-left: 25%;
+
+    }
+
+    .form-content {
+        margin-top: 15%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        text-align: center;
+    }
+
+    .form-content {
+        margin: auto;
+    }
+}
+
+body {
+    background-color: rgb(218, 108, 108);
+    background-image: url('images/bg-intro-mobile.png');
+}
+
+.left {
+    color: white;
+}
+
+.right {
+    text-align: center;
+}
+
+.form-content {
+    max-width: 500px;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px rgba(170, 150, 150, 0.356);
+    padding: 1.5em;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-top: .5em;
+    text-align: center;
+}
+
+.form-control {
+    padding: .5em 1em;
+    border: 1px solid rgba(37, 36, 36, 0.739);
+    border-radius: .5em;
+    height: 2.5em;
+    width: 95%;
+}
+
+
+.btn {
+    border: 0 solid;
+    height: 3em;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.btn-before {
+    width: 100%;
+    height: 4em;
+    background-color: rgb(32, 0, 138);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: rgb(3, 170, 120);
+}
+
+.text-link {
+    text-decoration: none;
+    color: red;
+}
+
+.icon_error,
+.note {
+    display: none;
+    float: right;
+    color: red;
+}
+
+.icon_error {
+    position: relative;
+    top: -35px;
+    right: 5px;
+}
+
+.note{
+    position: relative;
+    top: 2px;
+    right: -30px;
+}
