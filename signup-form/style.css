@@ -69,7 +69,7 @@ body {
 form {
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 5px rgba(170, 150, 150, 0.356);
+    box-shadow: 1px 5px 5px gray;
     padding: 1.5em;
     margin-top: 20px;
 }
@@ -95,6 +95,7 @@ form {
     color: white;
     font-weight: 400;
     font-size: 18px;
+    box-shadow: 1px 5px 5px gray;
 }
 
 .btn-before {
@@ -106,6 +107,7 @@ form {
 .btn-submit {
     width: 100%;
     background-color: rgb(3, 170, 120);
+    cursor: pointer;
 }
 
 .text-link {

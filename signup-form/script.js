@@ -7,44 +7,48 @@ function submitForm(form) {
     if (firstName === "") {
         document.getElementById("icon_error1").style.display = "block";
         document.getElementById("note1").style.display = "block";
-        document.getElementById('First_Name').style.border ="2px solid red";
+        document.getElementById("note1").innerHTML = "First Name cannot be empty";
+        document.getElementById('First_Name').style.border = "2px solid red";
         valid = false;
     } else {
         document.getElementById("icon_error1").style.display = "none";
-        document.getElementById('First_Name').style.border ="2px solid rgb(3, 170, 120)";
+        document.getElementById('First_Name').style.border = "2px solid rgb(3, 170, 120)";
         document.getElementById("note1").style.display = "none";
     }
 
     if (lastName === "") {
         document.getElementById("icon_error2").style.display = "block";
-        document.getElementById('Last_Name').style.border ="2px solid red";
+        document.getElementById('Last_Name').style.border = "2px solid red";
         document.getElementById("note2").style.display = "block";
+        document.getElementById("note2").innerHTML = "Last Name cannot be empty";
         valid = false;
     } else {
         document.getElementById("icon_error2").style.display = "none";
-        document.getElementById('Last_Name').style.border ="2px solid rgb(3, 170, 120)";
+        document.getElementById('Last_Name').style.border = "2px solid rgb(3, 170, 120)";
         document.getElementById("note2").style.display = "none";
     }
 
     if (email === "") {
         document.getElementById("icon_error3").style.display = "block";
-        document.getElementById('email').style.border ="2px solid red";
+        document.getElementById('email').style.border = "2px solid red";
+        document.getElementById("note3").innerHTML = "Email Address cannot be empty";
         document.getElementById("note3").style.display = "block";
         valid = false;
     } else {
         document.getElementById("icon_error3").style.display = "none";
-        document.getElementById('email').style.border ="2px solid rgb(3, 170, 120)";
+        document.getElementById('email').style.border = "2px solid rgb(3, 170, 120)";
         document.getElementById("note3").style.display = "none";
     }
 
     if (pass === "") {
         document.getElementById("icon_error4").style.display = "block";
-        document.getElementById('Password').style.border ="2px solid red";
+        document.getElementById('Password').style.border = "2px solid red";
         document.getElementById("note4").style.display = "block";
+        document.getElementById("note4").innerHTML = "Password cannot be empty";
         valid = false;
     } else {
         document.getElementById("icon_error4").style.display = "none";
-        document.getElementById('Password').style.border ="2px solid rgb(3, 170, 120)";
+        document.getElementById('Password').style.border = "2px solid rgb(3, 170, 120)";
         document.getElementById("note4").style.display = "none";
     }
 }
