@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./style.css">
+	<title>CodeGym</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<h1 class="title-header">Our Pricing</h1>
+			<div class="d-flex">
+				<span class="time">Annually</span>
+				<label class="switch">
+					<input type="checkbox" id="switch-month" checked>
+					<span class="slider"></span>
+				</label>
+				<span class="time">Monthly</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="card card-left">
+				<h4 class="card-title">Basic</h4>
+				<h1 class="card-price">
+					<span class="monthly"><small class="dollar">&dollar;</small>19.99</span>
+					<span class="annually"><small class="dollar">&dollar;</small>199.99</span>
+				</h1>
+				<dl>
+					<dd>500 GB Storage</dd>
+					<dd>2 Users Allowed</dd>
+					<dd>Send up to 3 GB</dd>
+				</dl>
+				<div class="button">
+					<button class="btn">Learn More</button>
+				</div>
+			</div>
+			<div class="card card-center">
+				<h4 class="card-title">Professional</h4>
+				<h1 class="card-price">
+					<span class="monthly"><small class="dollar">&dollar;</small>24.99</span>
+					<span class="annually"><small class="dollar">&dollar;</small>249.99</span>
+				</h1>
+				<dl>
+					<dd>1 TB Storage</dd>
+					<dd>5 Users Allowed</dd>
+					<dd>Send up to 10 GB</dd>
+				</dl>
+				<div class="button">
+					<button class="btn btn-center">Learn More</button>
+				</div>
+			</div>
+			<div class="card card-right">
+				<h4 class="card-title">Master</h4>
+				<h1 class="card-price">
+					<span class="monthly"><small class="dollar">&dollar;</small>39.99</span>
+					<span class="annually"><small class="dollar">&dollar;</small>399.99</span>
+				</h1>
+				<dl>
+					<dd>2 TB Storage</dd>
+					<dd>10 Users Allowed</dd>
+					<dd>Send up to 20 GB</dd>
+				</dl>
+				<div class="button">
+					<button class="btn">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	window.onload = function () {
+		document.getElementById('switch-month').onchange = function () {
+			let monthly = document.getElementsByClassName('monthly');
+			let annually = document.getElementsByClassName('annually');
+			if (!this.checked) {
+				for (let i = 0; i < monthly.length; i++) {
+					monthly[i].style.display = "none";
+					annually[i].style.display = "block";
+				}
+			} else {
+				for (let i = 0; i < monthly.length; i++) {
+					monthly[i].style.display = "block";
+					annually[i].style.display = "none";
+				}
+			}
+		}
+	}
+</script>
+
+</html>
