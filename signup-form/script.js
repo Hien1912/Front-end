@@ -1,4 +1,4 @@
-function submitForm(form) {
+function submitForm() {
     let firstName = document.getElementById('First_Name').value;
     let lastName = document.getElementById('Last_Name').value;
     let email = document.getElementById('email').value;
@@ -50,5 +50,13 @@ function submitForm(form) {
         document.getElementById("icon_error4").style.display = "none";
         document.getElementById('Password').style.border = "1.5px solid rgb(3, 170, 120)";
         document.getElementById("note4").style.display = "none";
+    }
+
+    return valid;
+}
+
+document.getElementById('form-login').onsubmit = function () {
+    if (!submitForm()) {
+        event.preventDefault();
     }
 }
