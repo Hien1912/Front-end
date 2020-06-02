@@ -94,6 +94,7 @@ body {
 }
 
 h2 {
+    padding-top: 30px;
     font-size: 30px;
     color: hsl(232, 13%, 33%);
 }
@@ -133,7 +134,7 @@ p b {
 }
 
 .display {
-    font-size: 50px;
+    font-size: 60px;
     color: hsl(232, 13%, 33%);
 }
 
