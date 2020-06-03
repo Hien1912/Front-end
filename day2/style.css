@@ -92,7 +92,7 @@ input:checked+.slider:before {
 }
 
 .card-title {
-    color: hsl(232, 13%, 33%);
+    color: hsl(234, 14%, 74%);
 }
 
 .annually {
@@ -143,7 +143,7 @@ dd {
     height: 50px;
     line-height: 50px;
     border-top: 1px solid hsl(234, 14%, 74%);
-    color: hsl(232, 13%, 33%);
+    color: hsl(234, 14%, 74%);
 }
 
 dd:last-child {
