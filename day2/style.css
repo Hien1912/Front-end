@@ -113,9 +113,9 @@ input:checked+.slider:before {
 
 .dollar {
     position: relative;
-    bottom: 9px;
+    bottom: 6px;
     right: 4px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .content {
