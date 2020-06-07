@@ -212,6 +212,10 @@ footer .container .copyright {
   text-align: right;
 }
 
+footer .container .copyright-copy {
+  color: #f3f4f6;
+}
+
 .section {
   min-height: 37em;
 }
