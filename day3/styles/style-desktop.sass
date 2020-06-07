@@ -1,0 +1,243 @@
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap')
+
+$dmin: 375px
+$dmax: 1440px
+
+// Colors
+
+//  Primary
+
+$Blue: hsl(233, 26%, 24%)
+$Green: hsl(136, 65%, 51%)
+$Cyan: hsl(192, 70%, 51%)
+
+//  Neutral
+
+$Grayish: hsl(233, 8%, 62%)
+$LightGrayish: hsl(220, 16%, 96%)
+$VeryLight: hsl(0, 0%, 98%)
+$White: hsl(0, 0%, 100%)
+
+$gradient: linear-gradient(to bottom right, $Green, $Cyan)
+// Typography
+
+// Body Copy
+
+// @media screen and ( min-width:  768px)
+//     none: none
+//     block: block
+
+// @media screen and ( m-width:  768px)
+//     none: none
+//     block: block
+
+html, body
+    font-family: 'Public Sans', sans-serif
+    font-size: 18px
+    background: gray
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+.atribution
+    font-size: 11px
+    text-align: center
+a
+    color: hsl(228, 45%, 44%)
+    text-decoration: none
+// Screen
+.d-none
+    display: none
+.d-block
+    display: block
+ul
+    list-style: none
+// Button
+.btn
+    padding: 0
+    border: 0
+    border-radius: 1.5em 
+    height: 3em
+    width: 10em !important
+    // min-width: 10em
+    background-image: $gradient
+    cursor: pointer
+    outline: none
+    text-align: center
+    &:hover
+        opacity: .75
+        & .btn-request
+            color: $White
+    & .btn-request
+        font-weight: 400
+.container
+    max-width: $dmax
+    margin: 0 auto
+
+// Navbar
+header
+    background-color: $White
+.navbar
+    display: grid
+    grid-template-columns: 25% 50% 25%
+    justify-content: center
+    align-items: stretch
+    height: 4.5em
+    &.container
+        & > a
+            margin: auto 0
+        & > a
+            & img
+        & > button.d-none
+            & > img
+        & > ul.nav
+            display: grid
+            grid-template-columns: repeat(5,auto)
+            justify-content: center
+            align-items: stretch
+            grid-gap: 1em
+            text-align: center
+            margin-top: 1.5em
+            & li
+                width: min-content
+                &:hover
+                    border-bottom: .25em solid
+                    border-image-source: $gradient
+                    border-image-slice: 1
+        & button.btn.nav-btn
+            margin: auto 0 auto auto
+// Section
+.section
+    // Digital Banking
+    &.digital-banking
+        & .container
+            & h2
+            & p
+            & button.btn.digital-banking-btn
+    &.why-choose
+        & .container
+            & .section-header
+                & h3
+                & p
+            & .section-body
+                & .section-card
+                    & .card-header
+                        & img
+                    & .card-body
+                        & h4
+                        & p
+    &.articles
+        & .container
+            & .section-header
+                & h3
+            & .section-body
+                & small
+                & h5
+                    & a
+                & p
+
+footer
+    background-color: $Blue
+    & > .container
+        min-height: 10em
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        justify-content: center
+        align-items: center
+        & .social
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: flex-start
+            & .social-logo-brand
+                he
+            & .social-icon
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                & li
+                    margin: auto 5px 0 5px
+                    & a
+                        &:hover .d-block
+                            display: none
+                        &:hover .d-none
+                            display: block
+        & .contact
+            height: 100%
+            display: grid
+            grid-template-columns: 1fr 1fr
+            justify-content: flex-start
+            align-items: center
+            &-list-left, &-list-right
+                height: 70%
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: flex-start
+        & .copyright
+            height: 80%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: flex-end
+
+@media screen and ( max-width: $dmax * 1.2)
+    .container
+        padding: 0 10vw
+
+@media screen and ( max-width: 1024px)
+    .container
+        padding: 0 5vw
+
+@media screen and ( max-width:  767.9px)
+    .navbar
+        display: flex
+        justify-content: space-between
+        align-items: stretch
+        height: 4.5em
+        &.container
+            & > a
+                margin: auto 0
+            & > a
+                & img
+            & > button.d-none
+                display: block
+                border: 0
+                outline: none
+                background-color: $White
+                & .toggle-close
+                    display: none
+                & .toggle-open
+                    display: block
+                    
+                // & > img
+            & > ul.nav
+                display: none
+                position: fixed
+                background-color: $White
+                min-width: 90vw
+                top: 5.5em
+                left: 5vw
+                border-radius: 5px
+                flex-direction: column
+                justify-content: space-between
+                align-items: stretch
+                text-align: center
+                margin: auto
+                padding: auto
+                & li
+                    margin: .75em auto
+                    &:hover
+                        border-bottom: .25em solid
+                        border-image-source: $gradient
+                        border-image-slice: 1
+                    &:first-child
+                        margin-top: 2em
+                    &:last-child
+                        margin-bottom: 2em
+            & button.btn.nav-btn
+                display: none
+                margin: auto 0 auto auto

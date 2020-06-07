@@ -1,0 +1,111 @@
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap')
+
+$Mobile: 375px
+$Desktop: 1440px
+
+// Colors
+
+//  Primary
+
+$Blue: hsl(233, 26%, 24%)
+$Green: hsl(136, 65%, 51%)
+$Cyan: hsl(192, 70%, 51%)
+
+//  Neutral
+
+$Grayish: hsl(233, 8%, 62%)
+$LightGrayish: hsl(220, 16%, 96%)
+$VeryLight: hsl(0, 0%, 98%)
+$White: hsl(0, 0%, 100%)
+
+// Typography
+
+// Body Copy
+
+=background($color)
+    background-color: $color
+
+=gradient
+    background-image: linear-gradient(to bottom right, $Green, $Cyan)
+
+html, body
+    font-family: 'Public Sans', sans-serif
+    font-size: 18px
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+.atribution
+    font-size: 11px
+    text-align: center
+a
+    color: hsl(228, 45%, 44%)
+    text-decoration: none
+// Screen
+.mobile
+    &-block
+        display: none
+    &-none
+        display: block
+// Navbar
+.navbar
+    &.container
+        & a
+            & img
+        & button.mobile-block
+            & img
+        & div
+            & ul
+                & li
+                    & a
+        & button.nav.nav-btn
+
+// Section
+.section
+    // Digital Banking
+    &.digital-banking
+        & .container
+            & h2
+            & p
+            & button.btn.digital-banking-btn
+    &.why-choose
+        & .container
+            & .section-header
+                & h3
+                & p
+            & .section-body
+                & .section-card
+                    & .card-header
+                        & img
+                    & .card-body
+                        & h4
+                        & p
+    &.articles
+        & .container
+            & .section-header
+                & h3
+            & .section-body
+                & small
+                & h5
+                    & a
+                & p
+
+footer
+    &.container
+        & .social
+            &-logo-brand
+            &-icon
+                & li
+                    & a
+                        & .hover-none
+                        & .hover-block
+        & .contact
+            &-list-left
+                & li
+                    & a
+            &-list-right
+                & li
+                    & a
+        & .copyright
+            &-btn
+            &-copy
