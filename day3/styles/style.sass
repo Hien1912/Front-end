@@ -73,6 +73,8 @@ ul
 
 
 .navbar
+    z-index: 3
+    position: relative
     background-color: $White
     & > .container
         display: flex
@@ -84,7 +86,7 @@ ul
     &-nav
         display: flex
     &-btn
-
+        margin-right: 3em
     .nav-link
         display: block
         margin: 0 .5em
@@ -234,13 +236,15 @@ footer
 .digital-banking
     background-color: $VeryLight
     display: block
+    position: relative
+    z-index: 2
     .container
         position: relative
         display: block
         height: 100% !important
         background-image: url("../images/bg-intro-desktop.svg")
         background-repeat: no-repeat
-        background-position-x: 600px
+        background-position-x: 500px
         background-position-y: -300px
         background-size: 100%
     h2
@@ -253,9 +257,9 @@ footer
         max-width: $dmax/3.25
     img
         position: absolute
-        top: 0
-        right: -6.25em
-        max-height: 45em
+        top: -7em
+        right: -7.2em
+        max-height: 60em
         
 
 @media screen and ( max-width: 768px)
